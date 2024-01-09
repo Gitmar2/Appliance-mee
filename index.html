@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applience Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1 id="h1">ONLINE SHOP</h1>
+      <input
+        type="search"
+        id="search"
+        name="search"
+        placeholder="Search for Appliences Available...."
+      />
+
+      <div id="img">
+        <a href="">
+          <span id="icons">
+            <img src="home.png" alt="Home" />
+          </span>
+        </a>
+        
+        <a href="signup.html" onclick="alert('You need to Sign up!'); return false;">
+          <span id="icon">
+            <img src="account.png" alt="Account" />
+          </span>
+        </a>
+        <span class="icons">
+        <img src="add-cart.png" alt="Add to Cart" onclick="openCartModal()" />
+       </span>
+        <span id="cart-count">0</span>
+    </div>
+    </div>
+    <!-- Header -->
+    
+       <!-- Category -->
+    <div id="category-nav">
+      <section>
+        <h2>APPLIENCES</h2>
+      </section>
+    </div>
+  
+    <!-- Shop content -->
+    <section class="shop-content">
+      <!-- Product 1 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/TELEVISION/111020.jpg"
+          alt="SHARP 2T-C32CB1M TV"
+          class="product-img"
+        />
+        <h2 class="product-title">SHARP 2T-C32CB1M</h2>
+        <span class="product-price">₱ 8,000.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/AIR%20CONDITIONER/512148.jpg"
+          alt="AIR%20CONDITIONER"
+          class="product-img"
+        />
+        <h2 class="product-title">AIR CONDITION TAC 09CSA/KEI</h2>
+        <span class="product-price">₱ 17,000.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/AUDIO/221299.jpg"
+          alt="AUDIO"
+          class="product-img"
+        />
+        <h2 class="product-title">SAMSUNG MX-ST50B/XP</h2>
+        <span class="product-price">₱ 15,000.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/TELEVISION/123175.jpg"
+          alt="LG"
+          class="product-img"
+        />
+        <h2 class="product-title">LG SMART TV 50UQ8050USB</h2>
+        <span class="product-price">₱ 20,000.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/GAS%20RANGE/611039.jpg"
+          alt="LG"
+          class="product-img"
+        />
+        <h2 class="product-title">MIDEA COOKING RANGE GAS</h2>
+        <span class="product-price">₱ 13,500.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+       <!-- Product 6 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/REFRIGERATOR/328068.jpg"
+          alt="LG"
+          class="product-img"
+        />
+        <h2 class="product-title">PANASONIC NR-AQ211NS</h2>
+        <span class="product-price">₱ 10,700.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+       <!-- Product 7 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/AUDIO/231023.jpg"
+          alt="SONY"
+          class="product-img"
+        />
+        <h2 class="product-title">SONY SHAKE-X30D</h2>
+        <span class="product-price">₱ 27,600.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div> 
+      </article>
+
+       <!-- Product 8 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/TELEVISION/124189.jpg"
+          alt="SAMSUNG"
+          class="product-img"
+        />
+        <h2 class="product-title">SAMSUNG QA50Q60CAGXXP</h2>
+        <span class="product-price">₱ 31,100.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div> 
+      </article>
+
+       <!-- Product 9 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/GAS%20RANGE/621010.jpg"
+          alt="LG"
+          class="product-img"
+        />
+        <h2 class="product-title">LA GERMANIA SL120 OVEN</h2>
+        <span class="product-price">₱ 9,200.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div>
+      </article>
+
+       <!-- Product 10 -->
+      <article class="product">
+        <img
+          src="https://imperialapplianceplaza.com.ph/images/products/REFRIGERATOR/336804.jpg"
+          alt="LG"
+          class="product-img"
+        />
+        <h2 class="product-title">CONDURA CNF-201I</h2>
+        <span class="product-price">₱ 16,000.00</span>
+        <div class="button">
+          <button class="add-to-cart" onclick="addToCart()">
+            Add to Cart
+          </button>
+          <button class="buy-now" onclick="">
+            Buy Now
+          </button>
+          </div> 
+      </article>
+    </section>
+    <!-- Shop content -->
+
+    <!-- Modal for Cart -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCartModal()">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+          <li>
+            <h3>SHARP 2T-C32CB1M</h3>
+            <img src="https://imperialapplianceplaza.com.ph/images/products/TELEVISION/111020.jpg" alt="Product 1 Image">
+            <p>Product 1 Description</p>
+            <p>₱ 8,000.00</p>
+            <button class="remove-button">Remove</button>
+          </li>
+
+          <li>
+            <h3>AIR CONDITION TAC 09CSA/KEI</h3>
+            <img src="https://ansons.ph/wp-content/uploads/2021/04/2T-C32CB1M.png" alt="Product 1 Image">
+            <p>Product 1 Description</p>
+            <p>₱ 17,000.00</p>
+            <button class="remove-button">Remove</button>
+          </li>
+
+        </ul>
+      </div>
+      </div>
+  </body>
+</html>
